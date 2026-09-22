@@ -9,17 +9,6 @@
     <script src="app.js" defer></script>
   </head>
   <body>
-    <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">王一鸣<span>.</span></a>
-      <nav aria-label="主导航">
-        <a href="#about">关于我</a>
-        <a href="#letter">手记</a>
-        <a href="#projects">项目</a>
-        <a href="#activity">记录</a>
-        <a href="#contact">联系</a>
-      </nav>
-    </header>
-
     <main id="top">
       <section class="prologue-section" id="letter" aria-labelledby="letter-title">
         <div class="prologue-layout">
@@ -40,18 +29,15 @@
       <section class="section" id="about" aria-labelledby="about-title">
         <div class="about-grid">
           <h2 id="about-title">就读的魔法学院<br /><em>哈尔滨工业大学（深圳）</em></h2>
-          <p>我目前就读于哈尔滨工业大学（深圳）计算机与电子通信专业，预计 2027 年毕业。主要使用 C++ 进行系统软件和算法相关开发，熟悉 Linux、Git，并使用 AI 工具辅助编程。</p>
-          <div class="about-facts">
-            <span>在读：哈尔滨工业大学（深圳）</span>
-            <span>专业：计算机与电子通信 · 2023—2027</span>
-            <span>擅长：C++ · 算法 · Linux · 系统工程</span>
-          </div>
-          <div class="award-list" aria-label="竞赛获奖">
-            <p class="award-title">竞赛获奖</p>
-            <span>2026 · ICPC 东亚总决赛·华为挑战赛 · 一等奖</span>
-            <span>2026 · ICPC 东亚总决赛 · 铜奖</span>
-            <span>2025 · ICPC 区域赛杭州站 · 银奖</span>
-            <span>2024 · 广东省大学生程序设计竞赛 · 金奖</span>
+          <div class="about-details">
+            <p>本科就读于哈尔滨工业大学（深圳），专业为计算机科学与技术，时间为 2023—2027。研究生已确认保研至哈尔滨工业大学（深圳），将继续在熟悉的校园里探索计算机系统与工程实践。</p>
+            <div class="award-list" aria-label="竞赛获奖">
+              <p class="award-title">竞赛获奖</p>
+              <span>2026 · ICPC 东亚总决赛·华为挑战赛 · 一等奖</span>
+              <span>2026 · ICPC 东亚总决赛 · 铜奖</span>
+              <span>2025 · ICPC 区域赛杭州站 · 银奖</span>
+              <span>2024 · 广东省大学生程序设计竞赛 · 金奖</span>
+            </div>
           </div>
         </div>
       </section>
@@ -59,7 +45,6 @@
       <section class="section" id="projects" aria-labelledby="projects-title">
         <div class="section-heading">
           <h2 id="projects-title">最近研究的魔法</h2>
-          <span class="muted">Intel QAT</span>
         </div>
         <div class="project-list">
           <article class="project-item">
@@ -69,13 +54,19 @@
             <p class="project-description">基于 Intel QAT 硬件加速的 PostgreSQL 数据库压缩引擎。将 QATzip 的 DEFLATE 硬件压缩集成到 PostgreSQL 17 的 TOAST 存储路径，降低压缩过程的 CPU 占用。实测吞吐最高达到软件方案的 4.5 倍，压缩比约为 LZ4 的 1.9 倍，OLTP 并发 TPS 提升 14.3%。</p>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
+          <article class="project-item">
+            <div>
+              <h3>获得金币的魔法</h3>
+            </div>
+            <p class="project-description">在基本面价值投资与个人量化尝试中，学习理解企业、市场和风险，用长期视角记录判断，也用数据检验直觉。</p>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
         </div>
       </section>
 
       <section class="section" id="activity" aria-labelledby="activity-title">
         <div class="section-heading">
           <h2 id="activity-title">留下痕迹</h2>
-          <span class="muted">持续更新</span>
         </div>
         <div class="activity-grid">
           <article class="activity-panel">
