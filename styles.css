@@ -91,7 +91,7 @@ h2 em { color: var(--moss); font-style: normal; }
 .github-chart-wrap { overflow-x: auto; padding: 12px 0 6px; }
 .github-chart { display: grid; grid-template-rows: repeat(7, 11px); grid-auto-flow: column; grid-auto-columns: 11px; gap: 4px; width: max-content; min-width: 490px; height: 101px; }
 .github-chart-empty { display: block; width: auto; min-width: 0; height: auto; color: var(--muted); font: .7rem 'DM Mono', monospace; }
-.github-cell { display: block; border-radius: 2px; }
+.github-cell { display: block; width: 11px; height: 11px; border-radius: 2px; }
 .chart-footnote { display: flex; align-items: center; justify-content: end; gap: 5px; margin-top: 15px; color: var(--muted); font: .62rem 'DM Mono', monospace; }
 .level, .token-level { width: 11px; height: 11px; display: inline-block; border-radius: 2px; }
 .level-0, .token-0, .token-level-0 { background: #e6ece5; }
