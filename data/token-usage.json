@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-22T20:24:42.950Z",
+  "generatedAt": "2026-09-22T21:16:37.779Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 312817409,
+  "totalTokens": 320293622,
   "models": [
     {
       "app": "claude",
@@ -17,12 +17,12 @@
     {
       "app": "codex",
       "model": "gpt-6-astra",
-      "totalTokens": 72617505,
-      "inputTokens": 38817467,
-      "outputTokens": 212601,
-      "cacheReadTokens": 33587437,
+      "totalTokens": 80093718,
+      "inputTokens": 42608001,
+      "outputTokens": 228904,
+      "cacheReadTokens": 37256813,
       "cacheCreationTokens": 0,
-      "requests": 513
+      "requests": 558
     },
     {
       "app": "codex",
@@ -182,10 +182,10 @@
       }
     },
     "2026-09-23": {
-      "totalTokens": 33865678,
+      "totalTokens": 41341891,
       "models": {
         "codex:codex-auto-review": 2621623,
-        "codex:gpt-6-astra": 31244055
+        "codex:gpt-6-astra": 38720268
       }
     },
     "2026-05-21": {
