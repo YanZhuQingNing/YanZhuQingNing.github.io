@@ -1,0 +1,399 @@
+{
+  "generatedAt": "2026-09-22T20:24:42.950Z",
+  "source": "CC Switch SQLite",
+  "backfillDays": 30,
+  "totalTokens": 312817409,
+  "models": [
+    {
+      "app": "claude",
+      "model": "claude-opus-4-8",
+      "totalTokens": 99468717,
+      "inputTokens": 1312596,
+      "outputTokens": 545787,
+      "cacheReadTokens": 96465368,
+      "cacheCreationTokens": 1144966,
+      "requests": 1126
+    },
+    {
+      "app": "codex",
+      "model": "gpt-6-astra",
+      "totalTokens": 72617505,
+      "inputTokens": 38817467,
+      "outputTokens": 212601,
+      "cacheReadTokens": 33587437,
+      "cacheCreationTokens": 0,
+      "requests": 513
+    },
+    {
+      "app": "codex",
+      "model": "gpt-5.5",
+      "totalTokens": 51115619,
+      "inputTokens": 2504546,
+      "outputTokens": 413377,
+      "cacheReadTokens": 48197696,
+      "cacheCreationTokens": 0,
+      "requests": 688
+    },
+    {
+      "app": "claude",
+      "model": "claude-sonnet-5",
+      "totalTokens": 26712151,
+      "inputTokens": 65952,
+      "outputTokens": 103524,
+      "cacheReadTokens": 25673832,
+      "cacheCreationTokens": 868843,
+      "requests": 324
+    },
+    {
+      "app": "claude",
+      "model": "claude-opus-5",
+      "totalTokens": 19911956,
+      "inputTokens": 74184,
+      "outputTokens": 612910,
+      "cacheReadTokens": 17162180,
+      "cacheCreationTokens": 2062682,
+      "requests": 383
+    },
+    {
+      "app": "claude",
+      "model": "deepseek-v4-pro",
+      "totalTokens": 15174664,
+      "inputTokens": 6093806,
+      "outputTokens": 316442,
+      "cacheReadTokens": 8764416,
+      "cacheCreationTokens": 0,
+      "requests": 246
+    },
+    {
+      "app": "codex",
+      "model": "gpt-5.6-sol",
+      "totalTokens": 12584070,
+      "inputTokens": 5067167,
+      "outputTokens": 116967,
+      "cacheReadTokens": 7399936,
+      "cacheCreationTokens": 0,
+      "requests": 178
+    },
+    {
+      "app": "claude",
+      "model": "minimax-m2.7",
+      "totalTokens": 9374064,
+      "inputTokens": 9311387,
+      "outputTokens": 62677,
+      "cacheReadTokens": 0,
+      "cacheCreationTokens": 0,
+      "requests": 124
+    },
+    {
+      "app": "codex",
+      "model": "codex-auto-review",
+      "totalTokens": 2621623,
+      "inputTokens": 1545896,
+      "outputTokens": 2575,
+      "cacheReadTokens": 1073152,
+      "cacheCreationTokens": 0,
+      "requests": 27
+    },
+    {
+      "app": "claude",
+      "model": "glm-5.1",
+      "totalTokens": 2407109,
+      "inputTokens": 406756,
+      "outputTokens": 16033,
+      "cacheReadTokens": 1984320,
+      "cacheCreationTokens": 0,
+      "requests": 39
+    },
+    {
+      "app": "codex",
+      "model": "gpt-5.6-luna",
+      "totalTokens": 658740,
+      "inputTokens": 449876,
+      "outputTokens": 4940,
+      "cacheReadTokens": 203924,
+      "cacheCreationTokens": 0,
+      "requests": 22
+    },
+    {
+      "app": "claude",
+      "model": "glm-4.7",
+      "totalTokens": 171191,
+      "inputTokens": 169340,
+      "outputTokens": 1851,
+      "cacheReadTokens": 0,
+      "cacheCreationTokens": 0,
+      "requests": 9
+    }
+  ],
+  "dates": {
+    "2026-08-26": {
+      "totalTokens": 2804514,
+      "models": {
+        "claude:claude-opus-5": 2804514
+      }
+    },
+    "2026-08-27": {
+      "totalTokens": 1733273,
+      "models": {
+        "claude:claude-opus-5": 1733273
+      }
+    },
+    "2026-09-02": {
+      "totalTokens": 1885308,
+      "models": {
+        "codex:gpt-5.6-sol": 1885308
+      }
+    },
+    "2026-09-04": {
+      "totalTokens": 7025104,
+      "models": {
+        "codex:gpt-5.6-sol": 7025104
+      }
+    },
+    "2026-09-11": {
+      "totalTokens": 3260059,
+      "models": {
+        "codex:gpt-5.6-luna": 658740,
+        "codex:gpt-6-astra": 2601319
+      }
+    },
+    "2026-09-15": {
+      "totalTokens": 3264739,
+      "models": {
+        "codex:gpt-6-astra": 3264739
+      }
+    },
+    "2026-09-16": {
+      "totalTokens": 1929104,
+      "models": {
+        "codex:gpt-6-astra": 1929104
+      }
+    },
+    "2026-09-18": {
+      "totalTokens": 1529665,
+      "models": {
+        "codex:gpt-6-astra": 1529665
+      }
+    },
+    "2026-09-19": {
+      "totalTokens": 32048623,
+      "models": {
+        "codex:gpt-6-astra": 32048623
+      }
+    },
+    "2026-09-23": {
+      "totalTokens": 33865678,
+      "models": {
+        "codex:codex-auto-review": 2621623,
+        "codex:gpt-6-astra": 31244055
+      }
+    },
+    "2026-05-21": {
+      "totalTokens": 11244938,
+      "models": {
+        "claude:deepseek-v4-pro": 1699683,
+        "claude:glm-4.7": 171191,
+        "claude:minimax-m2.7": 9374064
+      }
+    },
+    "2026-05-22": {
+      "totalTokens": 6483013,
+      "models": {
+        "claude:deepseek-v4-pro": 4075904,
+        "claude:glm-5.1": 2407109
+      }
+    },
+    "2026-05-26": {
+      "totalTokens": 3042733,
+      "models": {
+        "codex:gpt-5.5": 3042733
+      }
+    },
+    "2026-05-27": {
+      "totalTokens": 521442,
+      "models": {
+        "codex:gpt-5.5": 521442
+      }
+    },
+    "2026-05-28": {
+      "totalTokens": 251535,
+      "models": {
+        "codex:gpt-5.5": 251535
+      }
+    },
+    "2026-05-29": {
+      "totalTokens": 27075,
+      "models": {
+        "codex:gpt-5.5": 27075
+      }
+    },
+    "2026-05-30": {
+      "totalTokens": 30752608,
+      "models": {
+        "claude:claude-opus-4-8": 11434951,
+        "codex:gpt-5.5": 19317657
+      }
+    },
+    "2026-05-31": {
+      "totalTokens": 26981979,
+      "models": {
+        "codex:gpt-5.5": 26981979
+      }
+    },
+    "2026-06-07": {
+      "totalTokens": 3973235,
+      "models": {
+        "claude:claude-opus-4-8": 3973235
+      }
+    },
+    "2026-06-12": {
+      "totalTokens": 1058023,
+      "models": {
+        "claude:claude-opus-4-8": 84825,
+        "codex:gpt-5.5": 973198
+      }
+    },
+    "2026-06-13": {
+      "totalTokens": 41682706,
+      "models": {
+        "claude:claude-opus-4-8": 41682706
+      }
+    },
+    "2026-06-14": {
+      "totalTokens": 34161069,
+      "models": {
+        "claude:claude-opus-4-8": 34161069
+      }
+    },
+    "2026-06-15": {
+      "totalTokens": 5806949,
+      "models": {
+        "claude:claude-opus-4-8": 5806949
+      }
+    },
+    "2026-06-22": {
+      "totalTokens": 1439573,
+      "models": {
+        "claude:claude-opus-4-8": 1439573
+      }
+    },
+    "2026-06-24": {
+      "totalTokens": 457866,
+      "models": {
+        "claude:claude-opus-4-8": 457866
+      }
+    },
+    "2026-06-25": {
+      "totalTokens": 250467,
+      "models": {
+        "claude:claude-opus-4-8": 250467
+      }
+    },
+    "2026-06-27": {
+      "totalTokens": 3733665,
+      "models": {
+        "claude:deepseek-v4-pro": 3733665
+      }
+    },
+    "2026-06-28": {
+      "totalTokens": 4784199,
+      "models": {
+        "claude:deepseek-v4-pro": 4784199
+      }
+    },
+    "2026-07-15": {
+      "totalTokens": 17357600,
+      "models": {
+        "claude:claude-sonnet-5": 17357600
+      }
+    },
+    "2026-07-16": {
+      "totalTokens": 1622549,
+      "models": {
+        "claude:claude-sonnet-5": 1622549
+      }
+    },
+    "2026-07-17": {
+      "totalTokens": 7570770,
+      "models": {
+        "claude:claude-sonnet-5": 7570770
+      }
+    },
+    "2026-07-22": {
+      "totalTokens": 226741,
+      "models": {
+        "claude:claude-opus-4-8": 65509,
+        "claude:claude-sonnet-5": 161232
+      }
+    },
+    "2026-07-29": {
+      "totalTokens": 884006,
+      "models": {
+        "claude:claude-opus-4-8": 111567,
+        "claude:claude-opus-5": 772439
+      }
+    },
+    "2026-07-31": {
+      "totalTokens": 2728838,
+      "models": {
+        "claude:claude-opus-5": 2728838
+      }
+    },
+    "2026-08-05": {
+      "totalTokens": 1574916,
+      "models": {
+        "claude:claude-opus-5": 1574916
+      }
+    },
+    "2026-08-07": {
+      "totalTokens": 6929391,
+      "models": {
+        "claude:claude-opus-5": 3255733,
+        "codex:gpt-5.6-sol": 3673658
+      }
+    },
+    "2026-08-10": {
+      "totalTokens": 114982,
+      "models": {
+        "claude:claude-opus-5": 114982
+      }
+    },
+    "2026-08-11": {
+      "totalTokens": 1789731,
+      "models": {
+        "claude:claude-opus-5": 1789731
+      }
+    },
+    "2026-08-12": {
+      "totalTokens": 166322,
+      "models": {
+        "claude:claude-opus-5": 166322
+      }
+    },
+    "2026-08-14": {
+      "totalTokens": 2754650,
+      "models": {
+        "claude:claude-opus-5": 1873437,
+        "claude:deepseek-v4-pro": 881213
+      }
+    },
+    "2026-08-19": {
+      "totalTokens": 3015742,
+      "models": {
+        "claude:claude-opus-5": 3015742
+      }
+    },
+    "2026-08-21": {
+      "totalTokens": 39975,
+      "models": {
+        "claude:claude-opus-5": 39975
+      }
+    },
+    "2026-08-22": {
+      "totalTokens": 42054,
+      "models": {
+        "claude:claude-opus-5": 42054
+      }
+    }
+  }
+}

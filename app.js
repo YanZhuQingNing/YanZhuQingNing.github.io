@@ -1,19 +1,45 @@
-// Replace these date totals with CC Switch export data when it is available.
-const tokenUsage = {};
 const calendar = document.querySelector('#token-calendar');
-const today = new Date();
+const tokenTotal = document.querySelector('#token-total');
+const tokenTotalLabel = document.querySelector('#token-total-label');
+const tokenStatus = document.querySelector('#token-status');
+const tokenModels = document.querySelector('#token-models');
 
-for (let index = 0; index < 182; index += 1) {
-  const date = new Date(today);
-  date.setDate(today.getDate() - (181 - index));
-  const key = date.toISOString().slice(0, 10);
-  const value = tokenUsage[key] || 0;
-  const cell = document.createElement('i');
-  cell.className = `token-cell token-level-${Math.min(3, Math.ceil(value / 25000))}`;
-  cell.title = `${key}: ${value ? `${value.toLocaleString()} tokens` : '暂无数据'}`;
-  cell.setAttribute('aria-label', cell.title);
-  calendar.appendChild(cell);
+function formatTokens(value) {
+  return value >= 1000000 ? `${(value / 1000000).toFixed(1)}M` : value >= 1000 ? `${(value / 1000).toFixed(1)}k` : String(value);
 }
+
+function renderTokenUsage(data) {
+  const dates = data.dates || {};
+  const values = Object.values(dates).map((day) => day.totalTokens || 0);
+  const max = Math.max(...values, 1);
+  const todayKey = new Date().toISOString().slice(0, 10);
+  tokenTotal.textContent = formatTokens(data.totalTokens || 0);
+  tokenTotalLabel.innerHTML = `累计 token<br />今日 ${formatTokens(dates[todayKey]?.totalTokens || 0)}`;
+  tokenStatus.textContent = data.generatedAt ? `更新于 ${new Date(data.generatedAt).toLocaleDateString('zh-CN')}` : '暂无数据';
+  tokenModels.replaceChildren(...(data.models || []).slice(0, 8).map((item) => {
+    const row = document.createElement('div');
+    row.className = 'token-model-row';
+    row.innerHTML = `<span><b>${item.app}</b> ${item.model}</span><strong>${formatTokens(item.totalTokens)}</strong>`;
+    row.title = `${item.app} / ${item.model}: ${item.totalTokens.toLocaleString()} tokens`;
+    return row;
+  }));
+  for (let index = 0; index < 182; index += 1) {
+    const date = new Date();
+    date.setDate(date.getDate() - (181 - index));
+    const key = date.toISOString().slice(0, 10);
+    const value = dates[key]?.totalTokens || 0;
+    const cell = document.createElement('i');
+    cell.className = `token-cell token-level-${value ? Math.min(3, Math.ceil((value / max) * 3)) : 0}`;
+    cell.title = `${key}: ${value ? `${value.toLocaleString()} tokens` : '暂无记录'}`;
+    cell.setAttribute('aria-label', cell.title);
+    calendar.appendChild(cell);
+  }
+}
+
+fetch('data/token-usage.json', { cache: 'no-store' })
+  .then((response) => { if (!response.ok) throw new Error(`HTTP ${response.status}`); return response.json(); })
+  .then(renderTokenUsage)
+  .catch(() => { tokenStatus.textContent = '数据不可用'; tokenTotalLabel.innerHTML = '累计 token<br />读取失败'; });
 
 const githubChart = document.querySelector('#github-chart');
 

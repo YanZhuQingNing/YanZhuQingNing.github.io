@@ -103,6 +103,11 @@ h2 em { color: var(--moss); font-style: normal; }
 .token-summary { display: flex; align-items: baseline; gap: 12px; margin: 25px 0 18px; }
 .token-summary strong { font-size: 2.8rem; line-height: 1; letter-spacing: -.06em; }
 .token-summary span { color: var(--muted); font-size: .72rem; line-height: 1.35; }
+.token-models { display: flex; flex-direction: column; gap: 7px; margin: 0 0 18px; max-height: 156px; overflow-y: auto; }
+.token-model-row { display: flex; justify-content: space-between; gap: 12px; padding-top: 7px; border-top: 1px solid var(--line); color: var(--muted); font: .65rem 'DM Mono', monospace; }
+.token-model-row span { min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.token-model-row b { color: var(--ink); font-weight: 500; }
+.token-model-row strong { color: var(--deep-moss); font-weight: 500; white-space: nowrap; }
 .token-calendar { display: grid; grid-template-columns: repeat(26, 1fr); grid-auto-rows: 11px; gap: 4px; }
 .token-cell { display: block; border-radius: 2px; background: #e6ece5; }
 .data-note { max-width: 720px; margin: 20px 0 0; color: var(--muted); font-size: .76rem; }

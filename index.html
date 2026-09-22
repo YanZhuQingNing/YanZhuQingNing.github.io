@@ -86,15 +86,16 @@
           <article class="activity-panel token-panel">
             <div class="panel-heading">
               <div><p class="panel-kicker">AI WORK LOG</p><h3>Token 消耗</h3></div>
-              <span class="data-status">待接入数据</span>
+              <span class="data-status" id="token-status">读取中</span>
             </div>
-            <p class="panel-copy">Claude Code 与 Codex 的每日用量记录。当前先展示日历结构，真实统计需要从 CC Switch 导出数据。</p>
-            <div class="token-summary"><strong>—</strong><span>累计 token<br />尚未统计</span></div>
+            <p class="panel-copy">Claude Code 与 Codex 的每日用量记录，按模型自动汇总。</p>
+            <div class="token-summary"><strong id="token-total">—</strong><span id="token-total-label">累计 token<br />读取中</span></div>
+            <div class="token-models" id="token-models" aria-label="按模型统计的 Token 消耗"></div>
             <div class="token-calendar" id="token-calendar" aria-label="Token 消耗日历"></div>
             <div class="chart-footnote"><span>少</span><i class="token-level token-0"></i><i class="token-level token-1"></i><i class="token-level token-2"></i><i class="token-level token-3"></i><span>多</span></div>
           </article>
         </div>
-        <p class="data-note">统计说明：CC Switch 通常只负责切换 API 配置，不会自动汇总 Claude Code 与 Codex 的 token 用量。之后可以接入账单导出、CLI 日志或手动 CSV，让这个日历显示真实数据。</p>
+        <p class="data-note">统计说明：数据每天从 CC Switch 本地数据库同步，并回看最近 30 天，错过开机时间也会在下次任务运行时补齐。</p>
       </section>
 
       <section class="contact-section" id="contact" aria-labelledby="contact-title">
