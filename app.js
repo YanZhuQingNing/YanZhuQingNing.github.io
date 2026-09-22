@@ -21,7 +21,9 @@ function renderTokenUsage(data) {
     const key = date.toISOString().slice(0, 10);
     const value = dates[key]?.totalTokens || 0;
     const cell = document.createElement('i');
-    cell.className = `token-cell token-level-${value ? Math.min(3, Math.ceil((value / max) * 3)) : 0}`;
+    const level = value ? Math.min(3, Math.ceil((value / max) * 3)) : 0;
+    cell.className = `token-cell token-level-${level}`;
+    cell.style.backgroundColor = ['#e6ece5', '#c9dcb0', '#87aa6c', '#638252'][level];
     const modelDetails = Object.entries(dates[key]?.models || {})
       .sort(([, first], [, second]) => second - first)
       .map(([model, total]) => `${model.replace(':', ' / ')}: ${total.toLocaleString()} tokens`)
