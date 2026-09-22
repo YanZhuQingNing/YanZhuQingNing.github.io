@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="description" content="YanZhuQingNing 的个人主页、项目与开发记录" />
-    <title>YanZhuQingNing · 个人主页</title>
+    <title>王一鸣 · 个人主页</title>
     <link rel="stylesheet" href="styles.css" />
     <script src="app.js" defer></script>
   </head>
   <body>
     <header class="site-header">
-      <a class="brand" href="#top" aria-label="返回首页">YanZhuQingNing<span>.</span></a>
+      <a class="brand" href="#top" aria-label="返回首页">王一鸣<span>.</span></a>
       <nav aria-label="主导航">
         <a href="#about">关于我</a>
         <a href="#projects">项目</a>
@@ -22,23 +22,28 @@
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
         <p class="eyebrow">你好，我是</p>
-        <h1 id="hero-title">YanZhuQingNing</h1>
-        <p class="hero-copy">一个持续学习、持续构建，也认真记录过程的人。</p>
+        <h1 id="hero-title">王一鸣</h1>
+        <p class="hero-copy">哈尔滨工业大学（深圳）计算机与电子通信专业学生，喜欢把系统问题拆开，做成可验证的工程方案。</p>
         <div class="hero-actions">
           <a class="button button-primary" href="#projects">查看我的项目 <span aria-hidden="true">↘</span></a>
           <a class="button button-secondary" href="mailto:hello@example.com">联系我</a>
         </div>
         <div class="hero-note" aria-label="当前状态">
           <span class="status-dot"></span>
-          <span>正在用代码和 AI 工具，把想法变成作品</span>
+          <span>正在研究数据库系统与硬件加速</span>
         </div>
       </section>
 
       <section class="section" id="about" aria-labelledby="about-title">
         <div class="section-label">01 / 关于我</div>
         <div class="about-grid">
-          <h2 id="about-title">保持好奇，<br /><em>把事情做出来。</em></h2>
-          <p>我相信好的作品来自长期积累：读一些东西，试一个想法，解决一个具体问题，再把过程留下来。这里是我的个人空间，用来介绍我在做什么，也记录那些还没有答案的问题。</p>
+          <h2 id="about-title">让复杂系统<br /><em>变得更高效。</em></h2>
+          <p>我关注系统软件、数据库和底层性能优化，也在持续学习如何把算法、硬件能力和工程实践连接起来。好的结果不只是一项指标，更是能被复现、解释并继续改进的方案。</p>
+          <div class="about-facts">
+            <span>哈尔滨工业大学（深圳）</span>
+            <span>计算机与电子通信 · 2023—2027</span>
+            <span>C++ · Linux · Git · AI 辅助开发</span>
+          </div>
         </div>
       </section>
 
@@ -52,17 +57,17 @@
           <article class="project-item">
             <div>
               <p class="project-index">01</p>
-              <h3>个人网站</h3>
+              <h3>Intel QAT 数据库压缩引擎</h3>
             </div>
-            <p class="project-description">一个轻量、快速、持续迭代的个人空间，记录项目、想法和开发轨迹。</p>
+            <p class="project-description">实验室课题：将 QATzip 的 DEFLATE 硬件压缩集成到 PostgreSQL 17 TOAST 存储路径，用硬件卸载降低数据库压缩的 CPU 开销。实测吞吐最高达到软件方案的 4.5 倍，压缩比约为 LZ4 的 1.9 倍，OLTP 并发 TPS 提升 14.3%。</p>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
           <article class="project-item">
             <div>
               <p class="project-index">02</p>
-              <h3>正在探索的方向</h3>
+              <h3>HarmonyOS 系统软件</h3>
             </div>
-            <p class="project-description">AI 辅助开发、自动化工具和能真正解决问题的小产品。</p>
+            <p class="project-description">在华为实习期间做示例代码自动化回归检测，并基于 native hook 实现系统库函数热替换。</p>
             <span class="project-arrow" aria-hidden="true">↗</span>
           </article>
         </div>
@@ -106,7 +111,7 @@
     </main>
 
     <footer class="site-footer">
-      <span>© 2026 YanZhuQingNing</span>
+      <span>© 2026 王一鸣</span>
       <div class="footer-links">
         <a href="https://github.com/YanZhuQingNing" target="_blank" rel="noreferrer">GitHub</a>
         <a href="#top">返回顶部 ↑</a>
