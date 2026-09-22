@@ -64,8 +64,12 @@ h2 em { color: var(--moss); font-style: normal; }
 .about-details > p { margin-bottom: 28px; }
 .about-facts { display: flex; flex-direction: column; gap: 9px; align-self: end; color: var(--muted); font: .68rem 'DM Mono', monospace; }
 .about-facts { grid-column: 2; }
-.award-list { grid-column: 2; display: flex; flex-direction: column; gap: 9px; margin-top: 20px; color: var(--muted); font-size: .78rem; }
-.award-list span { padding-left: 0; }
+.award-list { display: flex; flex-direction: column; gap: 0; margin-top: 20px; color: var(--muted); font-size: .78rem; }
+.award-row { display: grid; grid-template-columns: 72px 1fr auto; gap: 22px; align-items: baseline; padding: 14px 0; border-top: 1px solid var(--line); }
+.award-row:last-child { border-bottom: 1px solid var(--line); }
+.award-year { color: var(--accent); font: .7rem 'DM Mono', monospace; }
+.award-event { color: var(--ink); }
+.award-row strong { color: var(--deep-moss); font-weight: 600; white-space: nowrap; }
 .award-title { margin: 0 0 2px; padding-left: 0; color: var(--deep-moss); font: .68rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin: 48px 0 30px; }
 .section-heading h2 { font-size: clamp(2rem, 4vw, 3.3rem); }
@@ -118,6 +122,8 @@ h2 em { color: var(--moss); font-style: normal; }
   .about-grid { grid-template-columns: 1fr; gap: 28px; }
   .about-facts { grid-column: auto; }
   .award-list { grid-column: auto; }
+  .award-row { grid-template-columns: 54px 1fr; gap: 12px; }
+  .award-row strong { grid-column: 2; }
   .activity-grid { grid-template-columns: 1fr; }
   .activity-panel { padding: 22px 18px; }
   .github-chart { min-width: 470px; }
