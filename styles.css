@@ -89,13 +89,16 @@ h2 em { color: var(--moss); font-style: normal; }
 .text-link { color: var(--muted); font: .7rem 'DM Mono', monospace; white-space: nowrap; }
 .text-link:hover { color: var(--ink); }
 .github-chart-wrap { overflow-x: auto; padding: 12px 0 6px; }
-.github-chart { display: block; width: 100%; min-width: 490px; height: 105px; object-fit: contain; object-position: left center; }
+.github-chart { display: grid; grid-template-rows: repeat(7, 11px); grid-auto-flow: column; grid-auto-columns: 11px; gap: 4px; width: max-content; min-width: 490px; height: 101px; }
+.github-chart-empty { display: block; width: auto; min-width: 0; height: auto; color: var(--muted); font: .7rem 'DM Mono', monospace; }
+.github-cell { display: block; border-radius: 2px; }
 .chart-footnote { display: flex; align-items: center; justify-content: end; gap: 5px; margin-top: 15px; color: var(--muted); font: .62rem 'DM Mono', monospace; }
 .level, .token-level { width: 11px; height: 11px; display: inline-block; border-radius: 2px; }
 .level-0, .token-0, .token-level-0 { background: #e6ece5; }
 .level-1, .token-1, .token-level-1 { background: #c9dcb0; }
 .level-2, .token-2, .token-level-2 { background: #87aa6c; }
-.level-3, .token-3, .token-level-3 { background: var(--deep-moss); }
+.level-3, .token-3, .token-level-3 { background: #638252; }
+.level-4 { background: var(--deep-moss); }
 .data-status { padding: 5px 8px; color: #6b633f; background: #ebe4c9; font: .62rem 'DM Mono', monospace; white-space: nowrap; }
 .token-summary { display: flex; align-items: baseline; gap: 12px; margin: 25px 0 18px; }
 .token-summary strong { font-size: 2.8rem; line-height: 1; letter-spacing: -.06em; }
