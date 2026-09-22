@@ -2,7 +2,6 @@ const calendar = document.querySelector('#token-calendar');
 const tokenTotal = document.querySelector('#token-total');
 const tokenTotalLabel = document.querySelector('#token-total-label');
 const tokenStatus = document.querySelector('#token-status');
-const tokenModels = document.querySelector('#token-models');
 
 function formatTokens(value) {
   return value >= 1000000 ? `${(value / 1000000).toFixed(1)}M` : value >= 1000 ? `${(value / 1000).toFixed(1)}k` : String(value);
@@ -16,13 +15,6 @@ function renderTokenUsage(data) {
   tokenTotal.textContent = formatTokens(data.totalTokens || 0);
   tokenTotalLabel.innerHTML = `累计 token<br />今日 ${formatTokens(dates[todayKey]?.totalTokens || 0)}`;
   tokenStatus.textContent = data.generatedAt ? `更新于 ${new Date(data.generatedAt).toLocaleDateString('zh-CN')}` : '暂无数据';
-  tokenModels.replaceChildren(...(data.models || []).slice(0, 8).map((item) => {
-    const row = document.createElement('div');
-    row.className = 'token-model-row';
-    row.innerHTML = `<span><b>${item.app}</b> ${item.model}</span><strong>${formatTokens(item.totalTokens)}</strong>`;
-    row.title = `${item.app} / ${item.model}: ${item.totalTokens.toLocaleString()} tokens`;
-    return row;
-  }));
   for (let index = 0; index < 182; index += 1) {
     const date = new Date();
     date.setDate(date.getDate() - (181 - index));
@@ -30,7 +22,11 @@ function renderTokenUsage(data) {
     const value = dates[key]?.totalTokens || 0;
     const cell = document.createElement('i');
     cell.className = `token-cell token-level-${value ? Math.min(3, Math.ceil((value / max) * 3)) : 0}`;
-    cell.title = `${key}: ${value ? `${value.toLocaleString()} tokens` : '暂无记录'}`;
+    const modelDetails = Object.entries(dates[key]?.models || {})
+      .sort(([, first], [, second]) => second - first)
+      .map(([model, total]) => `${model.replace(':', ' / ')}: ${total.toLocaleString()} tokens`)
+      .join('\n');
+    cell.title = value ? `${key}: ${value.toLocaleString()} tokens${modelDetails ? `\n${modelDetails}` : ''}` : `${key}: 暂无记录`;
     cell.setAttribute('aria-label', cell.title);
     calendar.appendChild(cell);
   }
