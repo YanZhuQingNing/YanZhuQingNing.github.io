@@ -45,7 +45,7 @@ h1 { max-width: 820px; margin: 14px 0 20px; font-size: clamp(4rem, 12vw, 9rem); 
 .button-secondary { border-color: var(--line); color: var(--muted); }
 .hero-note { display: flex; align-items: center; gap: 9px; margin-top: 74px; color: var(--muted); font-size: .74rem; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px #eadfbd; }
-.prologue-section { padding: 100px 0 118px; border-bottom: 1px solid var(--line); background: #e9e5d4; }
+.prologue-section { padding: 100px 0 118px; border-bottom: 1px solid var(--line); background: transparent; }
 .prologue-layout { display: grid; grid-template-columns: minmax(220px, .8fr) 1.7fr; gap: 60px; align-items: start; margin-top: 42px; }
 .prologue-art { margin: 0; }
 .prologue-art img { display: block; width: 100%; max-height: 580px; object-fit: cover; object-position: center; filter: saturate(.86) sepia(.08); }
@@ -65,9 +65,8 @@ h2 em { color: var(--moss); font-style: normal; }
 .about-facts { display: flex; flex-direction: column; gap: 9px; align-self: end; color: var(--muted); font: .68rem 'DM Mono', monospace; }
 .about-facts { grid-column: 2; }
 .award-list { grid-column: 2; display: flex; flex-direction: column; gap: 9px; margin-top: 20px; color: var(--muted); font-size: .78rem; }
-.award-list span { padding-left: 14px; position: relative; }
-.award-list span::before { content: '✦'; position: absolute; left: 0; color: var(--accent); }
-.award-title { margin: 0 0 2px; padding-left: 14px; color: var(--deep-moss); font: .68rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
+.award-list span { padding-left: 0; }
+.award-title { margin: 0 0 2px; padding-left: 0; color: var(--deep-moss); font: .68rem 'DM Mono', monospace; letter-spacing: .08em; text-transform: uppercase; }
 .section-heading { display: flex; justify-content: space-between; align-items: end; margin: 48px 0 30px; }
 .section-heading h2 { font-size: clamp(2rem, 4vw, 3.3rem); }
 .project-list { border-top: 1px solid var(--line); }
