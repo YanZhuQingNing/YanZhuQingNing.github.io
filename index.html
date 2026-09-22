@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="个人主页" />
+    <title>你的名字 · 个人主页</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="返回首页">你的名字<span>.</span></a>
+      <nav aria-label="主导航">
+        <a href="#about">关于我</a>
+        <a href="#projects">项目</a>
+        <a href="#contact">联系</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <p class="eyebrow">你好，我是</p>
+        <h1 id="hero-title">你的名字</h1>
+        <p class="hero-copy">一名专注于创造有用产品与清晰体验的开发者。</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#projects">查看我的项目 <span aria-hidden="true">↘</span></a>
+          <a class="button button-secondary" href="mailto:hello@example.com">联系我</a>
+        </div>
+        <div class="hero-note" aria-label="当前状态">
+          <span class="status-dot"></span>
+          <span>目前开放新的合作机会</span>
+        </div>
+      </section>
+
+      <section class="section" id="about" aria-labelledby="about-title">
+        <div class="section-label">01 / 关于我</div>
+        <div class="about-grid">
+          <h2 id="about-title">把想法变成<br /><em>真实的作品。</em></h2>
+          <p>我喜欢从问题出发，使用设计与技术打造简单、可靠、值得使用的数字产品。这个页面会持续更新，记录我的项目、想法与正在学习的东西。</p>
+        </div>
+      </section>
+
+      <section class="section" id="projects" aria-labelledby="projects-title">
+        <div class="section-label">02 / 精选项目</div>
+        <div class="section-heading">
+          <h2 id="projects-title">最近在做什么</h2>
+          <span class="muted">2026</span>
+        </div>
+        <div class="project-list">
+          <article class="project-item">
+            <div>
+              <p class="project-index">01</p>
+              <h3>个人网站</h3>
+            </div>
+            <p class="project-description">一个轻量、快速、持续迭代的个人空间。</p>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+          <article class="project-item">
+            <div>
+              <p class="project-index">02</p>
+              <h3>更多项目</h3>
+            </div>
+            <p class="project-description">项目详情将在这里逐步补充。</p>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact" aria-labelledby="contact-title">
+        <p class="eyebrow">03 / 联系</p>
+        <h2 id="contact-title">一起做点有意思的事？</h2>
+        <a class="contact-link" href="mailto:hello@example.com">hello@example.com <span aria-hidden="true">↗</span></a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 你的名字</span>
+      <div class="footer-links">
+        <a href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+        <a href="#top">返回顶部 ↑</a>
+      </div>
+    </footer>
+  </body>
+</html>
