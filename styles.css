@@ -49,6 +49,29 @@ h2 em { color: #8b9d36; font-style: normal; }
 .project-index { color: #9aa39a; }
 .project-description { margin: 0; color: var(--muted); font-size: .88rem; }
 .project-arrow { font-size: 1.3rem; text-align: right; }
+.activity-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin-top: 48px; }
+.activity-panel { min-width: 0; padding: 28px; border: 1px solid var(--line); background: rgba(255,255,255,.3); }
+.panel-heading { display: flex; justify-content: space-between; gap: 18px; align-items: start; }
+.panel-kicker { margin: 0 0 8px; color: var(--muted); font: 500 .68rem/1.4 'DM Mono', monospace; letter-spacing: .08em; }
+.panel-heading h3 { margin: 0; font-size: 1.4rem; letter-spacing: -.04em; }
+.panel-copy { min-height: 48px; margin: 22px 0; color: var(--muted); font-size: .82rem; }
+.text-link { color: var(--muted); font: .7rem 'DM Mono', monospace; white-space: nowrap; }
+.text-link:hover { color: var(--ink); }
+.github-chart-wrap { overflow-x: auto; padding: 12px 0 6px; }
+.github-chart { display: block; width: 100%; min-width: 490px; height: 105px; object-fit: contain; object-position: left center; }
+.chart-footnote { display: flex; align-items: center; justify-content: end; gap: 5px; margin-top: 15px; color: var(--muted); font: .62rem 'DM Mono', monospace; }
+.level, .token-level { width: 11px; height: 11px; display: inline-block; border-radius: 2px; }
+.level-0, .token-0, .token-level-0 { background: #e6ece5; }
+.level-1, .token-1, .token-level-1 { background: #c9dcb0; }
+.level-2, .token-2, .token-level-2 { background: #87aa6c; }
+.level-3, .token-3, .token-level-3 { background: #36734b; }
+.data-status { padding: 5px 8px; color: #6b7b37; background: #edf3d2; font: .62rem 'DM Mono', monospace; white-space: nowrap; }
+.token-summary { display: flex; align-items: baseline; gap: 12px; margin: 25px 0 18px; }
+.token-summary strong { font-size: 2.8rem; line-height: 1; letter-spacing: -.06em; }
+.token-summary span { color: var(--muted); font-size: .72rem; line-height: 1.35; }
+.token-calendar { display: grid; grid-template-columns: repeat(26, 1fr); grid-auto-rows: 11px; gap: 4px; }
+.token-cell { display: block; border-radius: 2px; background: #e6ece5; }
+.data-note { max-width: 720px; margin: 20px 0 0; color: var(--muted); font-size: .76rem; }
 .contact-section { padding: 145px 0 160px; }
 .contact-section h2 { max-width: 620px; margin: 18px 0 40px; }
 .contact-link { display: inline-flex; align-items: center; gap: 16px; padding-bottom: 7px; border-bottom: 1px solid var(--ink); font-size: 1.05rem; }
@@ -61,6 +84,10 @@ h2 em { color: #8b9d36; font-style: normal; }
   .hero { min-height: 590px; padding: 60px 0 80px; }
   h1 { font-size: clamp(3.8rem, 20vw, 7rem); }
   .about-grid { grid-template-columns: 1fr; gap: 28px; }
+  .activity-grid { grid-template-columns: 1fr; }
+  .activity-panel { padding: 22px 18px; }
+  .github-chart { min-width: 470px; }
+  .token-calendar { gap: 3px; }
   .section { padding: 80px 0; }
   .project-item { grid-template-columns: 1fr 24px; gap: 10px; }
   .project-description { grid-column: 1 / -1; grid-row: 2; }
