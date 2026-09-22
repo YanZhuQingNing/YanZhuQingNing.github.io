@@ -105,6 +105,10 @@ h2 em { color: var(--moss); font-style: normal; }
 .token-summary span { color: var(--muted); font-size: .72rem; line-height: 1.35; }
 .token-calendar { display: grid; grid-template-columns: repeat(26, 1fr); grid-auto-rows: 11px; gap: 4px; }
 .token-cell { display: block; border-radius: 2px; background: #e6ece5; }
+.token-cell.token-level-0 { background: #e6ece5; }
+.token-cell.token-level-1 { background: #c9dcb0; }
+.token-cell.token-level-2 { background: #87aa6c; }
+.token-cell.token-level-3 { background: #638252; }
 .data-note { max-width: 720px; margin: 20px 0 0; color: var(--muted); font-size: .76rem; }
 .contact-section { padding: 145px 0 160px; }
 .contact-section h2 { max-width: 620px; margin: 18px 0 40px; }
