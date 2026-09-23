@@ -1,9 +1,19 @@
 {
-  "generatedAt": "2026-09-22T21:16:37.779Z",
+  "generatedAt": "2026-09-23T15:55:02.845Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 320293622,
+  "totalTokens": 371856241,
   "models": [
+    {
+      "app": "codex",
+      "model": "gpt-6-astra",
+      "totalTokens": 130998708,
+      "inputTokens": 71692986,
+      "outputTokens": 455949,
+      "cacheReadTokens": 58849773,
+      "cacheCreationTokens": 0,
+      "requests": 830
+    },
     {
       "app": "claude",
       "model": "claude-opus-4-8",
@@ -13,16 +23,6 @@
       "cacheReadTokens": 96465368,
       "cacheCreationTokens": 1144966,
       "requests": 1126
-    },
-    {
-      "app": "codex",
-      "model": "gpt-6-astra",
-      "totalTokens": 80093718,
-      "inputTokens": 42608001,
-      "outputTokens": 228904,
-      "cacheReadTokens": 37256813,
-      "cacheCreationTokens": 0,
-      "requests": 558
     },
     {
       "app": "codex",
@@ -87,12 +87,12 @@
     {
       "app": "codex",
       "model": "codex-auto-review",
-      "totalTokens": 2621623,
-      "inputTokens": 1545896,
-      "outputTokens": 2575,
-      "cacheReadTokens": 1073152,
+      "totalTokens": 3279252,
+      "inputTokens": 1972177,
+      "outputTokens": 4035,
+      "cacheReadTokens": 1303040,
       "cacheCreationTokens": 0,
-      "requests": 27
+      "requests": 41
     },
     {
       "app": "claude",
@@ -182,10 +182,10 @@
       }
     },
     "2026-09-23": {
-      "totalTokens": 41341891,
+      "totalTokens": 92904510,
       "models": {
-        "codex:codex-auto-review": 2621623,
-        "codex:gpt-6-astra": 38720268
+        "codex:codex-auto-review": 3279252,
+        "codex:gpt-6-astra": 89625258
       }
     },
     "2026-05-21": {
