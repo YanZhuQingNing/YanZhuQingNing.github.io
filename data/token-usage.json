@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-09-26T15:55:02.687Z",
+  "generatedAt": "2026-09-27T15:55:01.926Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 370229100,
+  "totalTokens": 368495827,
   "models": [
     {
       "app": "codex",
@@ -47,12 +47,12 @@
     {
       "app": "claude",
       "model": "claude-opus-5",
-      "totalTokens": 18284815,
-      "inputTokens": 58564,
-      "outputTokens": 551497,
-      "cacheReadTokens": 16009215,
-      "cacheCreationTokens": 1665539,
-      "requests": 370
+      "totalTokens": 16551542,
+      "inputTokens": 57249,
+      "outputTokens": 505381,
+      "cacheReadTokens": 14443347,
+      "cacheCreationTokens": 1545565,
+      "requests": 303
     },
     {
       "app": "claude",
@@ -126,12 +126,6 @@
     }
   ],
   "dates": {
-    "2026-08-27": {
-      "totalTokens": 1733273,
-      "models": {
-        "claude:claude-opus-5": 1733273
-      }
-    },
     "2026-09-02": {
       "totalTokens": 1885308,
       "models": {
