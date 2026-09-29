@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-09-28T15:55:02.124Z",
+  "generatedAt": "2026-09-29T14:14:48.341Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 368495827,
+  "totalTokens": 389067359,
   "models": [
     {
       "app": "codex",
       "model": "gpt-6-astra",
-      "totalTokens": 130998708,
-      "inputTokens": 71692986,
-      "outputTokens": 455949,
-      "cacheReadTokens": 58849773,
+      "totalTokens": 141423079,
+      "inputTokens": 77572596,
+      "outputTokens": 514054,
+      "cacheReadTokens": 63336429,
       "cacheCreationTokens": 0,
-      "requests": 830
+      "requests": 916
     },
     {
       "app": "claude",
@@ -47,12 +47,12 @@
     {
       "app": "claude",
       "model": "claude-opus-5",
-      "totalTokens": 16551542,
-      "inputTokens": 57249,
-      "outputTokens": 505381,
-      "cacheReadTokens": 14443347,
-      "cacheCreationTokens": 1545565,
-      "requests": 303
+      "totalTokens": 21089329,
+      "inputTokens": 78357,
+      "outputTokens": 652800,
+      "cacheReadTokens": 18178755,
+      "cacheCreationTokens": 2179417,
+      "requests": 411
     },
     {
       "app": "claude",
@@ -85,14 +85,24 @@
       "requests": 124
     },
     {
+      "app": "pi",
+      "model": "claude-opus-5-5",
+      "totalTokens": 5521469,
+      "inputTokens": 0,
+      "outputTokens": 78173,
+      "cacheReadTokens": 4757509,
+      "cacheCreationTokens": 685787,
+      "requests": 212
+    },
+    {
       "app": "codex",
       "model": "codex-auto-review",
-      "totalTokens": 3279252,
-      "inputTokens": 1972177,
-      "outputTokens": 4035,
-      "cacheReadTokens": 1303040,
+      "totalTokens": 3367157,
+      "inputTokens": 2028670,
+      "outputTokens": 4471,
+      "cacheReadTokens": 1334016,
       "cacheCreationTokens": 0,
-      "requests": 41
+      "requests": 44
     },
     {
       "app": "claude",
@@ -174,6 +184,20 @@
       "models": {
         "codex:codex-auto-review": 3279252,
         "codex:gpt-6-astra": 89625258
+      }
+    },
+    "2026-09-25": {
+      "totalTokens": 9945214,
+      "models": {
+        "codex:codex-auto-review": 87905,
+        "codex:gpt-6-astra": 9857309
+      }
+    },
+    "2026-09-29": {
+      "totalTokens": 6088531,
+      "models": {
+        "codex:gpt-6-astra": 567062,
+        "pi:claude-opus-5-5": 5521469
       }
     },
     "2026-05-21": {
@@ -387,6 +411,18 @@
       "totalTokens": 1177373,
       "models": {
         "claude:claude-opus-5": 1177373
+      }
+    },
+    "2026-08-26": {
+      "totalTokens": 2804514,
+      "models": {
+        "claude:claude-opus-5": 2804514
+      }
+    },
+    "2026-08-27": {
+      "totalTokens": 1733273,
+      "models": {
+        "claude:claude-opus-5": 1733273
       }
     }
   }
