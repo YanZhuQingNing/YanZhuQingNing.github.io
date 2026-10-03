@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-02T15:55:02.508Z",
+  "generatedAt": "2026-10-03T15:55:01.927Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 389330290,
+  "totalTokens": 387444982,
   "models": [
     {
       "app": "codex",
@@ -67,12 +67,12 @@
     {
       "app": "codex",
       "model": "gpt-5.6-sol",
-      "totalTokens": 12584070,
-      "inputTokens": 5067167,
-      "outputTokens": 116967,
-      "cacheReadTokens": 7399936,
+      "totalTokens": 10698762,
+      "inputTokens": 3912461,
+      "outputTokens": 90621,
+      "cacheReadTokens": 6695680,
       "cacheCreationTokens": 0,
-      "requests": 178
+      "requests": 139
     },
     {
       "app": "claude",
@@ -136,12 +136,6 @@
     }
   ],
   "dates": {
-    "2026-09-02": {
-      "totalTokens": 1885308,
-      "models": {
-        "codex:gpt-5.6-sol": 1885308
-      }
-    },
     "2026-09-04": {
       "totalTokens": 7025104,
       "models": {
