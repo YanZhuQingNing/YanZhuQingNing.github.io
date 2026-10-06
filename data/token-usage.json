@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-10-04T15:55:02.398Z",
+  "generatedAt": "2026-10-06T00:41:22.709Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 387444982,
+  "totalTokens": 380419878,
   "models": [
     {
       "app": "codex",
@@ -65,16 +65,6 @@
       "requests": 246
     },
     {
-      "app": "codex",
-      "model": "gpt-5.6-sol",
-      "totalTokens": 10698762,
-      "inputTokens": 3912461,
-      "outputTokens": 90621,
-      "cacheReadTokens": 6695680,
-      "cacheCreationTokens": 0,
-      "requests": 139
-    },
-    {
       "app": "claude",
       "model": "minimax-m2.7",
       "totalTokens": 9374064,
@@ -93,6 +83,16 @@
       "cacheReadTokens": 4991182,
       "cacheCreationTokens": 710904,
       "requests": 226
+    },
+    {
+      "app": "codex",
+      "model": "gpt-5.6-sol",
+      "totalTokens": 3673658,
+      "inputTokens": 265780,
+      "outputTokens": 56070,
+      "cacheReadTokens": 3351808,
+      "cacheCreationTokens": 0,
+      "requests": 70
     },
     {
       "app": "codex",
@@ -136,12 +136,6 @@
     }
   ],
   "dates": {
-    "2026-09-04": {
-      "totalTokens": 7025104,
-      "models": {
-        "codex:gpt-5.6-sol": 7025104
-      }
-    },
     "2026-09-11": {
       "totalTokens": 3260059,
       "models": {
