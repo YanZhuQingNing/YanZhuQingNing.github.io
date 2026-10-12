@@ -1,18 +1,18 @@
 {
-  "generatedAt": "2026-10-11T15:55:02.205Z",
+  "generatedAt": "2026-10-12T15:55:02.243Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 414880856,
+  "totalTokens": 416783817,
   "models": [
     {
       "app": "codex",
       "model": "gpt-6-astra",
-      "totalTokens": 140700791,
-      "inputTokens": 77167063,
-      "outputTokens": 508745,
-      "cacheReadTokens": 63024983,
+      "totalTokens": 142148936,
+      "inputTokens": 77448090,
+      "outputTokens": 522689,
+      "cacheReadTokens": 64178157,
       "cacheCreationTokens": 0,
-      "requests": 877
+      "requests": 939
     },
     {
       "app": "claude",
@@ -113,6 +113,16 @@
       "cacheReadTokens": 1984320,
       "cacheCreationTokens": 0,
       "requests": 39
+    },
+    {
+      "app": "codex",
+      "model": "gpt-5.6-luna",
+      "totalTokens": 454816,
+      "inputTokens": 245952,
+      "outputTokens": 4940,
+      "cacheReadTokens": 203924,
+      "cacheCreationTokens": 0,
+      "requests": 22
     },
     {
       "app": "claude",
@@ -438,6 +448,13 @@
       "totalTokens": 3681232,
       "models": {
         "codex:gpt-5.6-sol": 3681232
+      }
+    },
+    "2026-09-11": {
+      "totalTokens": 1902961,
+      "models": {
+        "codex:gpt-5.6-luna": 454816,
+        "codex:gpt-6-astra": 1448145
       }
     }
   }
