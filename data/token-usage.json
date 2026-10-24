@@ -1,19 +1,9 @@
 {
-  "generatedAt": "2026-10-23T15:55:01.949Z",
+  "generatedAt": "2026-10-24T15:55:01.805Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 403946948,
+  "totalTokens": 311042438,
   "models": [
-    {
-      "app": "codex",
-      "model": "gpt-6-astra",
-      "totalTokens": 124653809,
-      "inputTokens": 59952963,
-      "outputTokens": 522689,
-      "cacheReadTokens": 64178157,
-      "cacheCreationTokens": 0,
-      "requests": 939
-    },
     {
       "app": "claude",
       "model": "claude-opus-4-8",
@@ -43,6 +33,16 @@
       "cacheReadTokens": 34165132,
       "cacheCreationTokens": 6491687,
       "requests": 854
+    },
+    {
+      "app": "codex",
+      "model": "gpt-6-astra",
+      "totalTokens": 35028551,
+      "inputTokens": 10850751,
+      "outputTokens": 201115,
+      "cacheReadTokens": 23976685,
+      "cacheCreationTokens": 0,
+      "requests": 420
     },
     {
       "app": "claude",
@@ -95,16 +95,6 @@
       "requests": 178
     },
     {
-      "app": "codex",
-      "model": "codex-auto-review",
-      "totalTokens": 3572560,
-      "inputTokens": 2157216,
-      "outputTokens": 5040,
-      "cacheReadTokens": 1410304,
-      "cacheCreationTokens": 0,
-      "requests": 50
-    },
-    {
       "app": "claude",
       "model": "glm-5.1",
       "totalTokens": 2407109,
@@ -123,6 +113,16 @@
       "cacheReadTokens": 203924,
       "cacheCreationTokens": 0,
       "requests": 22
+    },
+    {
+      "app": "codex",
+      "model": "codex-auto-review",
+      "totalTokens": 293308,
+      "inputTokens": 185039,
+      "outputTokens": 1005,
+      "cacheReadTokens": 107264,
+      "cacheCreationTokens": 0,
+      "requests": 9
     },
     {
       "app": "claude",
@@ -146,13 +146,6 @@
     }
   ],
   "dates": {
-    "2026-09-23": {
-      "totalTokens": 92904510,
-      "models": {
-        "codex:codex-auto-review": 3279252,
-        "codex:gpt-6-astra": 89625258
-      }
-    },
     "2026-09-25": {
       "totalTokens": 9945214,
       "models": {
