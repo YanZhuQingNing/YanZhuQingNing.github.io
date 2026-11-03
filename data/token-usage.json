@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-02T16:11:48.161Z",
+  "generatedAt": "2026-11-03T15:55:01.652Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 351937279,
+  "totalTokens": 393629344,
   "models": [
     {
       "app": "claude",
@@ -17,12 +17,22 @@
     {
       "app": "codex",
       "model": "gpt-6-astra",
-      "totalTokens": 79483611,
-      "inputTokens": 14876159,
-      "outputTokens": 514287,
-      "cacheReadTokens": 64093165,
+      "totalTokens": 79965681,
+      "inputTokens": 15264835,
+      "outputTokens": 522689,
+      "cacheReadTokens": 64178157,
       "cacheCreationTokens": 0,
-      "requests": 935
+      "requests": 939
+    },
+    {
+      "app": "pi",
+      "model": "claude-opus-5-5",
+      "totalTokens": 66934988,
+      "inputTokens": 746,
+      "outputTokens": 766038,
+      "cacheReadTokens": 55650544,
+      "cacheCreationTokens": 10517660,
+      "requests": 1194
     },
     {
       "app": "codex",
@@ -33,16 +43,6 @@
       "cacheReadTokens": 48197696,
       "cacheCreationTokens": 0,
       "requests": 688
-    },
-    {
-      "app": "pi",
-      "model": "claude-opus-5-5",
-      "totalTokens": 34355582,
-      "inputTokens": 478,
-      "outputTokens": 407677,
-      "cacheReadTokens": 28427585,
-      "cacheCreationTokens": 5519842,
-      "requests": 605
     },
     {
       "app": "claude",
@@ -95,6 +95,16 @@
       "requests": 178
     },
     {
+      "app": "pi",
+      "model": "deepseek-flash",
+      "totalTokens": 8501491,
+      "inputTokens": 89910,
+      "outputTokens": 70973,
+      "cacheReadTokens": 8340608,
+      "cacheCreationTokens": 0,
+      "requests": 137
+    },
+    {
       "app": "claude",
       "model": "glm-5.1",
       "totalTokens": 2407109,
@@ -143,6 +153,26 @@
       "cacheReadTokens": 0,
       "cacheCreationTokens": 0,
       "requests": 9
+    },
+    {
+      "app": "pi",
+      "model": "unknown",
+      "totalTokens": 129098,
+      "inputTokens": 126381,
+      "outputTokens": 2717,
+      "cacheReadTokens": 0,
+      "cacheCreationTokens": 0,
+      "requests": 1
+    },
+    {
+      "app": "pi",
+      "model": "m",
+      "totalTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheCreationTokens": 0,
+      "requests": 2
     }
   ],
   "dates": {
@@ -189,6 +219,35 @@
       "totalTokens": 1335591,
       "models": {
         "pi:claude-opus-5-5": 1335591
+      }
+    },
+    "2026-10-26": {
+      "totalTokens": 10739005,
+      "models": {
+        "pi:claude-opus-5-5": 10732949,
+        "pi:deepseek-flash": 6056,
+        "pi:m": 0
+      }
+    },
+    "2026-10-27": {
+      "totalTokens": 6473325,
+      "models": {
+        "pi:claude-opus-5-5": 6473325
+      }
+    },
+    "2026-10-28": {
+      "totalTokens": 13257769,
+      "models": {
+        "pi:claude-opus-5-5": 4916755,
+        "pi:deepseek-flash": 8341014
+      }
+    },
+    "2026-11-03": {
+      "totalTokens": 2592540,
+      "models": {
+        "pi:claude-opus-5-5": 2309021,
+        "pi:deepseek-flash": 154421,
+        "pi:unknown": 129098
       }
     },
     "2026-05-21": {
@@ -471,6 +530,19 @@
       "models": {
         "codex:codex-auto-review": 56929,
         "codex:gpt-6-astra": 5455645
+      }
+    },
+    "2026-09-29": {
+      "totalTokens": 6266470,
+      "models": {
+        "codex:gpt-6-astra": 482070,
+        "pi:claude-opus-5-5": 5784400
+      }
+    },
+    "2026-10-03": {
+      "totalTokens": 2362956,
+      "models": {
+        "pi:claude-opus-5-5": 2362956
       }
     }
   }
