@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-06T15:55:01.460Z",
+  "generatedAt": "2026-11-07T15:55:01.917Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 393629344,
+  "totalTokens": 394239246,
   "models": [
     {
       "app": "claude",
@@ -136,6 +136,16 @@
     },
     {
       "app": "codex",
+      "model": "gpt-6.1-sol",
+      "totalTokens": 609902,
+      "inputTokens": 347899,
+      "outputTokens": 1523,
+      "cacheReadTokens": 260480,
+      "cacheCreationTokens": 0,
+      "requests": 11
+    },
+    {
+      "app": "codex",
       "model": "gpt-5.6-luna",
       "totalTokens": 454816,
       "inputTokens": 245952,
@@ -176,12 +186,6 @@
     }
   ],
   "dates": {
-    "2026-10-07": {
-      "totalTokens": 2349295,
-      "models": {
-        "pi:claude-opus-5-5": 2349295
-      }
-    },
     "2026-10-09": {
       "totalTokens": 665887,
       "models": {
@@ -248,6 +252,12 @@
         "pi:claude-opus-5-5": 2309021,
         "pi:deepseek-flash": 154421,
         "pi:unknown": 129098
+      }
+    },
+    "2026-11-07": {
+      "totalTokens": 609902,
+      "models": {
+        "codex:gpt-6.1-sol": 609902
       }
     },
     "2026-05-21": {
@@ -543,6 +553,12 @@
       "totalTokens": 2362956,
       "models": {
         "pi:claude-opus-5-5": 2362956
+      }
+    },
+    "2026-10-07": {
+      "totalTokens": 2349295,
+      "models": {
+        "pi:claude-opus-5-5": 2349295
       }
     }
   }
