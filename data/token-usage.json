@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-11T15:55:02.437Z",
+  "generatedAt": "2026-11-12T15:55:01.644Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 366092744,
+  "totalTokens": 361484116,
   "models": [
     {
       "app": "claude",
@@ -37,12 +37,12 @@
     {
       "app": "pi",
       "model": "claude-opus-5-5",
-      "totalTokens": 40872920,
-      "inputTokens": 347,
-      "outputTokens": 471526,
-      "cacheReadTokens": 33568672,
-      "cacheCreationTokens": 6832375,
-      "requests": 750
+      "totalTokens": 36264292,
+      "inputTokens": 283,
+      "outputTokens": 419514,
+      "cacheReadTokens": 30443295,
+      "cacheCreationTokens": 5401200,
+      "requests": 680
     },
     {
       "app": "claude",
@@ -186,12 +186,6 @@
     }
   ],
   "dates": {
-    "2026-10-12": {
-      "totalTokens": 4608628,
-      "models": {
-        "pi:claude-opus-5-5": 4608628
-      }
-    },
     "2026-10-20": {
       "totalTokens": 1355940,
       "models": {
