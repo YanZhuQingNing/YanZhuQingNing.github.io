@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-19T15:55:01.836Z",
+  "generatedAt": "2026-11-22T15:28:35.728Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 361484116,
+  "totalTokens": 360128176,
   "models": [
     {
       "app": "claude",
@@ -42,7 +42,7 @@
       "outputTokens": 419514,
       "cacheReadTokens": 30443295,
       "cacheCreationTokens": 5401200,
-      "requests": 680
+      "requests": 677
     },
     {
       "app": "claude",
@@ -125,16 +125,6 @@
       "requests": 44
     },
     {
-      "app": "claude",
-      "model": "claude-opus-5-5",
-      "totalTokens": 1355940,
-      "inputTokens": 39,
-      "outputTokens": 19770,
-      "cacheReadTokens": 1224399,
-      "cacheCreationTokens": 111732,
-      "requests": 39
-    },
-    {
       "app": "codex",
       "model": "gpt-6.1-sol",
       "totalTokens": 609902,
@@ -186,13 +176,6 @@
     }
   ],
   "dates": {
-    "2026-10-20": {
-      "totalTokens": 1355940,
-      "models": {
-        "claude:claude-opus-5-5": 1355940,
-        "pi:claude-opus-5-5": 0
-      }
-    },
     "2026-10-25": {
       "totalTokens": 1335591,
       "models": {
