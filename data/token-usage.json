@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-11-25T15:55:02.010Z",
+  "generatedAt": "2026-11-26T15:55:01.850Z",
   "source": "CC Switch SQLite",
   "backfillDays": 30,
-  "totalTokens": 358792585,
+  "totalTokens": 348053580,
   "models": [
     {
       "app": "claude",
@@ -35,16 +35,6 @@
       "requests": 688
     },
     {
-      "app": "pi",
-      "model": "claude-opus-5-5",
-      "totalTokens": 34928701,
-      "inputTokens": 268,
-      "outputTokens": 410175,
-      "cacheReadTokens": 29205386,
-      "cacheCreationTokens": 5312872,
-      "requests": 650
-    },
-    {
       "app": "claude",
       "model": "claude-sonnet-5",
       "totalTokens": 26712151,
@@ -53,6 +43,16 @@
       "cacheReadTokens": 25673832,
       "cacheCreationTokens": 868843,
       "requests": 324
+    },
+    {
+      "app": "pi",
+      "model": "claude-opus-5-5",
+      "totalTokens": 24195752,
+      "inputTokens": 107,
+      "outputTokens": 252861,
+      "cacheReadTokens": 19579537,
+      "cacheCreationTokens": 4363247,
+      "requests": 488
     },
     {
       "app": "claude",
@@ -97,12 +97,12 @@
     {
       "app": "pi",
       "model": "deepseek-flash",
-      "totalTokens": 8501491,
-      "inputTokens": 89910,
-      "outputTokens": 70973,
-      "cacheReadTokens": 8340608,
+      "totalTokens": 8495435,
+      "inputTokens": 86680,
+      "outputTokens": 70963,
+      "cacheReadTokens": 8337792,
       "cacheCreationTokens": 0,
-      "requests": 137
+      "requests": 135
     },
     {
       "app": "claude",
@@ -163,27 +163,9 @@
       "cacheReadTokens": 0,
       "cacheCreationTokens": 0,
       "requests": 1
-    },
-    {
-      "app": "pi",
-      "model": "m",
-      "totalTokens": 0,
-      "inputTokens": 0,
-      "outputTokens": 0,
-      "cacheReadTokens": 0,
-      "cacheCreationTokens": 0,
-      "requests": 2
     }
   ],
   "dates": {
-    "2026-10-26": {
-      "totalTokens": 10739005,
-      "models": {
-        "pi:claude-opus-5-5": 10732949,
-        "pi:deepseek-flash": 6056,
-        "pi:m": 0
-      }
-    },
     "2026-10-27": {
       "totalTokens": 6473325,
       "models": {
